@@ -1,9 +1,24 @@
 {
   "name": "vuebbble",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple vue component displaying dribbble shots from a user",
+  "main": "src/main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robbinfellow/vuebbble.git"
+  },
+  "keywords": [
+    "vue",
+    "dribbble",
+    "api",
+    "shots"
+  ],
   "author": "Robbin Johansson <robbinfellow@gmail.com>",
-  "private": false,
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robbinfellow/vuebbble/issues"
+  },
+  "homepage": "https://github.com/robbinfellow/vuebbble#readme",
   "scripts": {
     "dev": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "watch": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
