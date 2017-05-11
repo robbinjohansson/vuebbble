@@ -1,6 +1,6 @@
 {
   "name": "vuebbble",
-  "version": "1.1.1",
+  "version": "1.0.0",
   "description": "Simple vue component displaying dribbble shots from a user",
   "main": "src/main.js",
   "repository": {
