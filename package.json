@@ -1,6 +1,6 @@
 {
   "name": "vuebbble",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple vue component displaying dribbble shots from a user",
   "author": "Robbin Johansson <robbinfellow@gmail.com>",
   "private": false,
