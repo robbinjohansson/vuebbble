@@ -2,7 +2,7 @@
 Simple vue component displaying shots from a user using the dribbble api.
 
 ### Getting started
-```php
+```bash
 $ yarn add vuebbble --dev
 # or ...
 $ npm i vuebbble --save-dev
@@ -12,7 +12,7 @@ $ npm i vuebbble --save-dev
 ##### 1. [Register](https://dribbble.com/account/applications/new) your dribbble application
 
 ##### 2. Require vuebbble
-```js
+```javascript
 require('vuebbble');
 ```
 
