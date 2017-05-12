@@ -1,8 +1,8 @@
 {
   "name": "vuebbble",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Simple vue component displaying shots from a user using the dribbble api",
-  "main": "dist/scripts/main.js",
+  "main": "main.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/robbinfellow/vuebbble.git"
