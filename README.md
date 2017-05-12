@@ -1,5 +1,5 @@
 ## Vuebbble
-Simple vue component fetching a users dribbble shots using the dribbble api.
+Simple vue component displaying shots from a user using the dribbble api.
 
 ### Get started
 TODO
