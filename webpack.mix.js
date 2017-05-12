@@ -11,4 +11,5 @@ const { mix } = require('laravel-mix');
  |
  */
 
-mix.js('src/components/Vuebbble.vue', 'vuebbble.js');
+mix.setPublicPath('dist')
+   .js('src/main.js', 'vuebbble.js');

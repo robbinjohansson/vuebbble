@@ -1,8 +1,8 @@
 {
   "name": "vuebbble",
-  "version": "2.1.0",
+  "version": "2.1.13",
   "description": "Simple vue component displaying shots from a user using the dribbble api",
-  "main": "Vuebbble.vue",
+  "main": "dist/vuebbble.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/robbinfellow/vuebbble.git"
@@ -30,7 +30,6 @@
     "axios": "^0.16.1",
     "laravel-mix": "^0.*",
     "vue": "^2.0.1",
-    "vue-axios": "^2.0.2",
-    "vue-router": "^2.5.3"
+    "vue-axios": "^2.0.2"
   }
 }
