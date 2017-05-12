@@ -11,4 +11,4 @@ const { mix } = require('laravel-mix');
  |
  */
 
-mix.js('src/main.js', '/');
+mix.js('src/components/Vuebbble.vue', 'vuebbble.js');

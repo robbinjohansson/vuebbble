@@ -16,6 +16,11 @@
 </template>
 
 <script>
+
+import Vue from 'vue'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+
 export default {
     mounted(){
         this.get();
@@ -41,9 +46,7 @@ export default {
         get(){
         	var url = 'https://api.dribbble.com/v1/users/'+this.user+'/shots/?access_token='+this.token;
         	axios.get(url).then(response => {
-                _.each(response.data, (shot) => {
-                    this.shots.push(shot);
-                }, this);
+                this.shots = response.data;
             });
         }
     }
