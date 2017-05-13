@@ -21,3 +21,10 @@ Vue.use(Vuebbble);
 ```html
 <vuebbble token="CLIENT_ACCESS_TOKEN" user="USERNAME"></vuebbble>
 ```
+
+### Available properties
+
+Prop           | Data Type  | Required  | Default   | Description
+-------------- | ---------- | --------- | -------   | -----------
+`token`        | String     | `true`    |           | Application client access token
+`user`         | String     | `true`    |           | User to display shots from
