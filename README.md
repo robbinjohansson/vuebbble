@@ -1,28 +1,43 @@
-## Vuebbble
+# Vuebbble
 Simple vue component displaying shots from a user using the dribbble api.
 
-### Getting started
-```bash
+[![npm](https://img.shields.io/npm/v/vuebbble.svg)](https://www.npmjs.com/package/vuebbble)
+[![npm](https://img.shields.io/npm/dt/vuebbble.svg)](https://www.npmjs.com/package/vuebbble)
+[![npm](https://img.shields.io/npm/l/vuebbble.svg)](https://www.npmjs.com/package/vuebbble)
+
+## Getting started
+``` bash
 $ yarn add vuebbble --dev
 # or ...
 $ npm i vuebbble --save-dev
 ```
 
-### Usage
-##### 1. [Register](https://dribbble.com/account/applications/new) your dribbble application
+## Usage
+#### 1. [Register](https://dribbble.com/account/applications/new) your dribbble application
 
-##### 2. Require vuebbble
-```javascript
+#### 2. Require/import vuebbble
+
+##### Require
+
+``` javascript
+var Vue = require('vue');
 var Vuebbble = require('vuebbble');
 Vue.use(Vuebbble);
 ```
 
-##### 3. Display the component
-```html
+##### Import
+
+``` javascript
+import Vuebbble from 'vuebbble';
+```
+
+#### 3. Display the component
+
+``` html
 <vuebbble token="CLIENT_ACCESS_TOKEN" user="USERNAME"></vuebbble>
 ```
 
-### Available properties
+## Available properties
 
 Prop           | Data Type  | Required  | Default   | Description
 -------------- | ---------- | --------- | -------   | -----------
