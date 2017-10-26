@@ -15,9 +15,9 @@ $ npm i vuebbble --save-dev
 ## Usage
 #### 1. [Register](https://dribbble.com/account/applications/new) your dribbble application
 
-#### 2. Require/import vuebbble
+#### 2. Require/import Vuebbble (Use one of the examples below)
 
-##### Require
+##### Require:
 
 ``` javascript
 var Vue = require('vue');
@@ -25,7 +25,7 @@ var Vuebbble = require('vuebbble');
 Vue.use(Vuebbble);
 ```
 
-##### Import
+##### Import:
 
 ``` javascript
 import Vuebbble from 'vuebbble';
