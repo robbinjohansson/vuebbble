@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Vuebbble from './components/Vuebbble.vue'
+import Vuebbble from '../src/components/Vuebbble.vue'
 
 export default {
     name: 'app',
