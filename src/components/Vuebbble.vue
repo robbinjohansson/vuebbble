@@ -1,8 +1,12 @@
 <template>
     <div class="vuebbble">
-        <div v-for="shot in shots" class="shot">
+        <div
+            class="shot"
+            v-for="(shot, index) in shots"
+            :key="index"
+        >
             <img :src="shot.images.hidpi">
-            <h2>{{ shot.title }}</h2>
+            <h3 v-html="shot.title"></h3>
             <div class="description" v-html="shot.description"></div>
             <div class="likes">
                 <p>{{ shot.likes_count }} likes</p>
@@ -11,7 +15,13 @@
                 <p>{{ shot.views_count }} views</p>
             </div>
             <div class="tags">
-                <div v-for="tag in shot.tags" class="tag">{{ tag }}</div>
+                <div
+                    class="tag" 
+                    v-for="(tag, index) in shot.tags"
+                    :key="index"
+                    v-html="tag"
+                >
+                </div>
             </div>
         </div>
     </div>
