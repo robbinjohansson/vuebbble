@@ -15,20 +15,34 @@ $ npm i vuebbble --save-dev
 ## Usage
 #### 1. [Register](https://dribbble.com/account/applications/new) your dribbble application
 
-#### 2. Require/import Vuebbble (Use one of the examples below)
+#### 2. Install Vuebbble
 
-##### Require:
+##### Global:
+
+This will make **\<vuebbble>** available globally within your Vue app:
 
 ``` javascript
-var Vue = require('vue');
+window.Vue = require('vue');
 var Vuebbble = require('vuebbble');
-Vue.use(Vuebbble);
+window.Vue.use(Vuebbble);
 ```
 
-##### Import:
+##### Local:
 
-``` javascript
-import Vuebbble from 'vuebbble';
+Include **\<vuebbble>** directly into your component using import:
+
+``` vue
+<template>
+    <vuebbble token="CLIENT_ACCESS_TOKEN" user="USERNAME"></vuebbble>
+</template>
+
+<script>
+    import Vuebbble from 'vuebbble';
+
+    export default {
+        // ...
+    }
+</script>
 ```
 
 #### 3. Display the component
