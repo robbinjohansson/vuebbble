@@ -38,9 +38,12 @@ Include **\<vuebbble>** directly into your component using import:
 
 <script>
     import Vuebbble from 'vuebbble';
-
+    
     export default {
-        // ...
+        name: 'app',
+        components: {
+            Vuebbble
+        }
     }
 </script>
 ```
