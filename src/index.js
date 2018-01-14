@@ -6,6 +6,4 @@ const plugin = {
   }
 }
 
-Vuebbble.install = plugin.install
-
-export default Vuebbble
+export default plugin

@@ -3,7 +3,7 @@
 [![npm](https://img.shields.io/npm/l/vuebbble.svg)](https://www.npmjs.com/package/vuebbble)
 
 # Vuebbble
-Simple vue component displaying shots from a user using the dribbble api.
+Vue component displaying user shots using the dribbble api.
 
 ## Installation
 ```shell
@@ -33,16 +33,6 @@ Display the component using [scoped slots.](https://vuejs.org/v2/guide/component
         </template>
     </vuebbble>
 </template>
-
-<script>
-import Vuebbble from 'vuebbble'
-
-Vue.component('vuebbble', Vuebbble)
-
-export default {
-    // ...
-}
-</script>
 ```
 
 ## Available properties

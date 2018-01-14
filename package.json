@@ -1,7 +1,7 @@
 {
   "name": "vuebbble",
   "version": "2.3.2",
-  "description": "Simple vue component displaying shots from a user using the dribbble api",
+  "description": "Vue component displaying user shots using the dribbble api",
   "author": "Robbin Johansson <robbinfellow@gmail.com>",
   "main": "dist/vuebbble.min.js",
   "homepage": "https://github.com/robbinfellow/vuebbble#readme",
@@ -24,6 +24,9 @@
     "lint": "./node_modules/.bin/eslint --ext .js,.vue src",
     "build": "rm -rf dist && ./node_modules/.bin/webpack --hide-modules -p --progress"
   },
+  "dependencies": {
+    "vue": "^2.5.13"
+  },
   "devDependencies": {
     "axios": "^0.17.1",
     "babel-core": "^6.25.0",
@@ -31,13 +34,12 @@
     "babel-plugin-lodash": "^3.3.2",
     "babel-preset-env": "^1.6.1",
     "clean-webpack-plugin": "^0.1.16",
-    "css-loader": "^0.28.4",
-    "eslint": "4.3.0",
-    "eslint-plugin-vue": "3.13.1",
-    "vue": "^2.5.2",
-    "vue-loader": "^13.0.4",
-    "vue-template-compiler": "^2.5.2",
-    "webpack": "^3.4.1"
+    "css-loader": "^0.28.8",
+    "eslint": "^4.15.0",
+    "eslint-plugin-vue": "^4.2.0",
+    "vue-loader": "^13.7.0",
+    "vue-template-compiler": "^2.5.13",
+    "webpack": "^3.10.0"
   },
   "babel": {
     "presets": [
@@ -61,10 +63,10 @@
   "eslintConfig": {
     "extends": [
       "eslint:recommended",
-      "plugin:vue/recommended"
+      "plugin:vue/essential"
     ],
     "rules": {
-      "vue/require-v-for-key": 0
+      "vue/no-unused-vars": 0
     }
   }
 }
