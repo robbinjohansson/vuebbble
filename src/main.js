@@ -1,9 +1,16 @@
-import Vuebbble from './components/Vuebbble.vue';
+import Vuebbble from './components/Vuebbble.vue'
 
-export default {
-    install(Vue) {
-        Vue.component('vuebbble', Vuebbble);
-    },
-};
+function plugin (Vue) {
+  Vue.component('vuebbble', Vuebbble)
+}
 
-export { Vuebbble };
+// Install by default if using the script tag
+if (typeof window !== 'undefined' && window.Vue) {
+  window.Vue.use(plugin)
+}
+
+export default plugin
+
+export {
+  Vuebbble
+}
