@@ -8,7 +8,7 @@
 </template>
 
 <script>
-var axios = require('axios');
+import axios from 'axios'
 
 export default {
     name: 'vuebbble',
