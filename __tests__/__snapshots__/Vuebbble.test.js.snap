@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Vuebbble can mount 1`] = `
-"
-            <div id=\\"app\\"><div class=\\"vuebbble\\"> <!----></div></div>
-        "
-`;

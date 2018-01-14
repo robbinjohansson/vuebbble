@@ -1,9 +1,11 @@
-import Vuebbble from './components/Vuebbble.vue';
+import Vuebbble from './components/Vuebbble.vue'
 
-export default {
-    install(Vue) {
-        Vue.component('vuebbble', Vuebbble);
-    },
-};
+const plugin = {
+  install: Vue => {
+    Vue.component('vuebbble', Vuebbble)
+  }
+}
 
-export { Vuebbble };
+Vuebbble.install = plugin.install
+
+export default Vuebbble
