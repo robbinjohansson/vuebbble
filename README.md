@@ -12,28 +12,13 @@ $ yarn add vuebbble --dev
 $ npm i vuebbble --save-dev
 ```
 
-#### Register as component:
+#### Register the component:
 
 ```javascript
 import Vue from 'vue'
 import Vuebbble from 'vuebbble'
 
-export default {
-    name: 'app',
-
-    components: {
-        Vuebbble
-    }
-}
-```
-
-#### Register globally:
-
-```javascript
-var Vue = require('vue')
-var Vuebbble = require('vuebbble')
-
-Vue.use(Vuebbble)
+Vue.component('vuebbble', Vuebbble)
 ```
 
 ## Usage
@@ -52,12 +37,10 @@ Display the component using [scoped slots.](https://vuejs.org/v2/guide/component
 <script>
 import Vuebbble from 'vuebbble'
 
-export default {
-    name: 'app',
+Vue.component('vuebbble', Vuebbble)
 
-    components: {
-        Vuebbble
-    }
+export default {
+    // ...
 }
 </script>
 ```

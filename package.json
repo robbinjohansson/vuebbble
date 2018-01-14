@@ -1,6 +1,6 @@
 {
   "name": "vuebbble",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "Simple vue component displaying shots from a user using the dribbble api",
   "main": "dist/vuebbble.js",
   "author": "Robbin Johansson <robbinfellow@gmail.com>",
