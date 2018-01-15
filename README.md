@@ -12,9 +12,16 @@ $ yarn add vuebbble --dev
 $ npm i vuebbble --save-dev
 ```
 
-#### Register the component:
+#### Setup:
 
 ```javascript
+// register the plugin
+import Vue from 'vue'
+import Vuebbble from 'vuebbble'
+
+Vue.use(Vuebbble)
+
+// ... or register the component manually
 import Vue from 'vue'
 import { Vuebbble } from 'vuebbble'
 

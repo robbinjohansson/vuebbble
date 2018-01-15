@@ -12,3 +12,4 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 
 export default plugin
+export { Vuebbble }
