@@ -1,29 +1,23 @@
-/* eslint-env node */
-const path = require('path')
-const CleanWebpackPlugin = require('clean-webpack-plugin')
+
+var path = require('path')
+var webpack = require('webpack')
 
 module.exports = {
-  context: __dirname,
-  resolve: {
-    modules: [
-      path.resolve(__dirname, 'src'),
-      'node_modules'
-    ],
-    alias: {
-      'vue$': 'vue/dist/vue.esm.js'
-    },
-    extensions: ['.js', '.json', '.vue']
-  },
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: "vuebbble.min.js",
-    library: 'Vuebbble',
-    libraryTarget: 'umd',
-    umdNamedDefine: true
+    path: path.resolve(__dirname, './dist'),
+    publicPath: '/dist/',
+    filename: 'vuebbble.js'
   },
   module: {
     rules: [
+      {
+        test: /\.css$/,
+        use: [
+          'vue-style-loader',
+          'css-loader'
+        ],
+      },
       {
         test: /\.vue$/,
         loader: 'vue-loader',
@@ -31,15 +25,44 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        exclude: path.resolve(__dirname, 'node_modules'),
+        exclude: /node_modules/
       }
     ]
   },
-  plugins: [
-    new CleanWebpackPlugin(['./dist']),
-  ],
-  devtool: false,
+  resolve: {
+    alias: {
+      'vue$': 'vue/dist/vue.esm.js'
+    },
+    extensions: ['*', '.js', '.vue', '.json']
+  },
+  devServer: {
+    historyApiFallback: true,
+    noInfo: true,
+    overlay: true
+  },
   performance: {
     hints: false
-  }
+  },
+  devtool: '#eval-source-map'
+}
+
+if (process.env.NODE_ENV === 'production') {
+  module.exports.devtool = '#source-map'
+  // http://vue-loader.vuejs.org/en/workflow/production.html
+  module.exports.plugins = (module.exports.plugins || []).concat([
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: '"production"'
+      }
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      sourceMap: true,
+      compress: {
+        warnings: false
+      }
+    }),
+    new webpack.LoaderOptionsPlugin({
+      minimize: true
+    })
+  ])
 }

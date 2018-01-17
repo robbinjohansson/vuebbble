@@ -31,11 +31,16 @@ export default {
         user: {
             type: String,
             required: true
+        },
+        count: {
+            type: Number,
+            default: 6,
+            required: false
         }
     },
     methods: {
         get(){
-            this.url = 'https://api.dribbble.com/v1/users/'+this.user+'/shots/?access_token='+this.token;
+            this.url = 'https://api.dribbble.com/v1/users/'+this.user+'/shots/?access_token='+this.token+'&per_page='+this.count;
             axios.get(this.url)
                 .then(response => {
                     this.shots = response.data;
