@@ -1,6 +1,6 @@
 {
   "name": "vuebbble",
-  "version": "2.3.3",
+  "version": "2.3.4",
   "description": "Vue component to easily display dribbble shots from a user",
   "author": "Robbin Johansson <robbinfellow@gmail.com>",
   "main": "dist/vuebbble.js",
