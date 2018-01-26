@@ -34,7 +34,7 @@ Vue.component('vuebbble', Vuebbble)
 
 Display the component using [scoped slots.](https://vuejs.org/v2/guide/components.html#Scoped-Slots)
 
-```vue
+```html
 <template>
     <vuebbble token="CLIENT_ACCESS_TOKEN" user="USERNAME" :count="6">
         <template slot="shots" slot-scope="props">
