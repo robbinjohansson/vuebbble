@@ -34,7 +34,7 @@ export default {
         },
         count: {
             type: Number,
-            default: 6,
+            default: 5,
             required: false
         }
     },

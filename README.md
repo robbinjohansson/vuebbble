@@ -36,7 +36,7 @@ Display the component using [scoped slots.](https://vuejs.org/v2/guide/component
 
 ```html
 <template>
-    <vuebbble token="CLIENT_ACCESS_TOKEN" user="USERNAME" :count="6">
+    <vuebbble token="CLIENT_ACCESS_TOKEN" user="USERNAME" :count="10">
         <template slot="shots" slot-scope="props">
             <img :src="props.shot.images.hidpi" :alt="props.shot.title">
         </template>
@@ -50,7 +50,7 @@ Prop           | Data Type  | Required  | Default   | Description
 -------------- | ---------- | --------- | -------   | -----------
 `token`        | String     | `true`    |           | Application client access token
 `user`         | String     | `true`    |           | User to display shots from
-`count`        | Number     | `false`   |           | Number of shots to fetch
+`count`        | Number     | `false`   | 5         | Number of shots to fetch
 
 ## Author
 
