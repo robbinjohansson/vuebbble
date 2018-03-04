@@ -14,18 +14,21 @@ $ npm i vuebbble --save-dev
 
 #### Setup:
 
+Register the component:
+
 ```javascript
-// register the plugin
-import Vue from 'vue'
-import Vuebbble from 'vuebbble'
+import Vue from 'vue';
+import { Vuebbble } from 'vuebbble';
 
-Vue.use(Vuebbble)
+Vue.component('vuebbble', Vuebbble);
+```
 
-// ... or register the component manually
-import Vue from 'vue'
-import { Vuebbble } from 'vuebbble'
+Alternatively using `Vue.use()` to register the component:
 
-Vue.component('vuebbble', Vuebbble)
+```javascript
+import Vuebbble from 'vuebbble';
+
+Vue.use(Vuebbble);
 ```
 
 ## Usage
