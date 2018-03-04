@@ -12,8 +12,6 @@ $ yarn add vuebbble --dev
 $ npm i vuebbble --save-dev
 ```
 
-#### Setup:
-
 Register the component:
 
 ```javascript
