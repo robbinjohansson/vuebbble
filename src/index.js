@@ -1,7 +1,7 @@
 import Vuebbble from './components/Vuebbble.vue';
 
 export default {
-    install(Vue, options) {
+    install(Vue) {
         Vue.component('vuebbble', Vuebbble);
     },
 };
