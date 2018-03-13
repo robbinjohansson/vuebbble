@@ -51,11 +51,9 @@ Prop           | Data Type  | Required  | Default   | Description
 `user`         | String     | `true`    |           | User to display shots from
 `count`        | Number     | `false`   | 5         | Number of shots to fetch
 
-## Author
+## Credits
 
-Robbin Johansson \<robbinfellow@gmail.com>.
-
-[![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/robbinfellow)
+* [Robbin Johansson](https://github.com/robbinfellow)
 
 ## License
 
