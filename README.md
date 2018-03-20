@@ -6,10 +6,6 @@
 # Vuebbble
 Vue component to easily display dribbble shots from a user.
 
-## Demo
-
-[Link](https://robbinfellow.github.io/vuebbble)
-
 ## Installation
 ```shell
 $ yarn add vuebbble --dev
