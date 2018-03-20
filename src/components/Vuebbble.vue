@@ -8,47 +8,47 @@
 </template>
 
 <script>
-import axios from 'axios'
+import axios from 'axios';
 
 export default {
     name: 'vuebbble',
 
-    mounted(){
+    mounted() {
         this.get();
     },
     data() {
         return {
             shots: [],
             url: '',
-            error: ''
-        }
+            error: '',
+        };
     },
     props: {
         token: {
             type: String,
-            required: true
+            required: true,
         },
         user: {
             type: String,
-            required: true
+            required: true,
         },
         count: {
             type: Number,
             default: 5,
-            required: false
-        }
+            required: false,
+        },
     },
     methods: {
-        get(){
-            this.url = 'https://api.dribbble.com/v1/users/'+this.user+'/shots/?access_token='+this.token+'&per_page='+this.count;
+        get() {
+            this.url = 'https://api.dribbble.com/v1/users/' + this.user + '/shots/?access_token=' + this.token + '&per_page=' + this.count;
             axios.get(this.url)
                 .then(response => {
                     this.shots = response.data;
                 })
                 .catch(error => {
-                    this.error = error.response.data.message + ' ('+error.response.status+')';
-                })
-        }
-    }
-}
+                    this.error = error.response.data.message + ' (' + error.response.status + ')';
+                });
+        },
+    },
+};
 </script>

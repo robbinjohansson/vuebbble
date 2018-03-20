@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>vuebbble</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+</head>
+<body>
+    <section id="app" class="section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-two-thirds">
+                    <vuebbble
+                        token="8828b898f4e2cec33f65f5342ba736b5e35e70f03681aa7435ad26c3b1830847"
+                        user="robbinfellow"
+                        :count="9"
+                        class="columns is-multiline"
+                    >
+                        <template slot="shots" slot-scope="props">
+                            <div class="column is-one-third">
+                                <img :src="props.shot.images.hidpi" :alt="props.shot.title">
+                            </div>
+                        </template>
+                    </vuebbble>
+                </div>
+            </div>
+        </div>
+    </section>
+<script src="build/app.js"></script>
+</body>
+</html>

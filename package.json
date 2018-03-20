@@ -1,17 +1,19 @@
 {
   "name": "vuebbble",
-  "version": "2.4.0",
+  "version": "2.5.0",
   "description": "Vue component to easily display dribbble shots from a user",
-  "author": "Robbin Johansson <robbinfellow@gmail.com>",
-  "main": "dist/vuebbble.min.js",
-  "homepage": "https://github.com/robbinfellow/vuebbble#readme",
-  "license": "MIT",
+  "main": "dist/index.js",
+  "jsnext:main": "src/index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config docs/webpack.config.js",
+    "build": "rm -rf dist && NODE_ENV=production webpack",
+    "lint": "eslint --ext .js,.vue --fix src __tests__; exit 0",
+    "prepublish": "npm run test; npm run build",
+    "test": "jest"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/robbinfellow/vuebbble.git"
-  },
-  "bugs": {
-    "url": "https://github.com/robbinfellow/vuebbble/issues"
   },
   "keywords": [
     "vue",
@@ -20,56 +22,43 @@
     "api",
     "shots"
   ],
-  "scripts": {
-    "lint": "./node_modules/.bin/eslint --ext .js,.vue src",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "cross-env NODE_ENV=production webpack -p --progress --hide-modules"
+  "author": "Robbin Johansson <robbinfellow@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robbinfellow/vuebbble/issues"
   },
-  "dependencies": {
-    "vue": "^2.5.13"
+  "homepage": "https://github.com/robbinfellow/vuebbble#readme",
+  "peerDependencies": {
+    "vue": "^2.3.0"
   },
   "devDependencies": {
     "axios": "^0.17.1",
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-stage-3": "^6.24.1",
-    "clean-webpack-plugin": "^0.1.18",
-    "cross-env": "^5.0.5",
-    "css-loader": "^0.28.7",
-    "eslint": "^4.15.0",
-    "eslint-plugin-vue": "^4.2.0",
-    "vue-loader": "^13.0.5",
-    "vue-template-compiler": "^2.4.4",
-    "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.9.1"
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.16.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.4.0",
+    "css-loader": "^0.28.1",
+    "eslint": "^3.7.1",
+    "eslint-config-spatie": "^1.1.0",
+    "jest": "^19.0.0",
+    "jest-vue-preprocessor": "^0.2.0",
+    "vue": "^2.3.0",
+    "vue-loader": "^12.0.3",
+    "vue-template-compiler": "^2.3.0",
+    "webpack": "^2.3.3",
+    "webpack-dev-server": "^2.4.2",
+    "webpack-merge": "^4.1.0"
   },
-  "babel": {
-    "presets": [
-      [
-        "env",
-        {
-          "uglify": true,
-          "modules": false,
-          "targets": {
-            "node": 6,
-            "browsers": [
-              "> 1%",
-              "last 2 versions",
-              "not ie <= 8"
-            ]
-          }
-        }
-      ]
-    ]
-  },
-  "eslintConfig": {
-    "extends": [
-      "eslint:recommended",
-      "plugin:vue/essential"
+  "jest": {
+    "testRegex": "test.js$",
+    "moduleFileExtensions": [
+      "js",
+      "vue"
     ],
-    "rules": {
-      "vue/no-unused-vars": 0
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      ".*\\.(vue)$": "<rootDir>/node_modules/jest-vue-preprocessor"
     }
   }
 }
