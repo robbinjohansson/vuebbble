@@ -2,7 +2,7 @@
 
 All notable changes to `vuebbble` will be documented in this file.
 
-## [2.6.0] - TBA
+## [2.6.0] - 2018-04-04
 
 ### Changed
 - Updated to dribbble `v2` API (v1 deprecated).
