@@ -4,7 +4,7 @@
 [![Build Status](https://img.shields.io/travis/robbinfellow/vuebbble/master.svg?style=flat-square)](https://travis-ci.org/robbinfellow/vuebbble)
 
 # Vuebbble
-Vue component to easily display dribbble shots from a user.
+Vue component to easily display dribbble shots from a user using the `v2` API.
 
 ## Demo
 
@@ -40,7 +40,7 @@ Display the component using [scoped slots.](https://vuejs.org/v2/guide/component
 
 ```html
 <template>
-    <vuebbble token="CLIENT_ACCESS_TOKEN" user="USERNAME" :count="10">
+    <vuebbble token="ACCESS_TOKEN" :count="10">
         <template slot="shots" slot-scope="props">
             <img :src="props.shot.images.hidpi" :alt="props.shot.title">
         </template>
@@ -48,12 +48,13 @@ Display the component using [scoped slots.](https://vuejs.org/v2/guide/component
 </template>
 ```
 
+> :mag: Inspect the component using Vue devtools to see all available data from the response.
+
 ## Available properties
 
 Prop           | Data Type  | Required  | Default   | Description
 -------------- | ---------- | --------- | -------   | -----------
-`token`        | String     | `true`    |           | Application client access token
-`user`         | String     | `true`    |           | User to display shots from
+`token`        | String     | `true`    |           | Application access token
 `count`        | Number     | `false`   | 5         | Number of shots to fetch
 
 ## Changelog

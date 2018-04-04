@@ -7,7 +7,7 @@ describe('Vuebbble', () => {
     beforeEach(() => {
         document.body.innerHTML = `
             <div id="app">
-                <vuebbble token="8828b898f4e2cec33f65f5342ba736b5e35e70f03681aa7435ad26c3b1830847" user="robbinfellow"></vuebbble>
+                <vuebbble token="dff1b22ab880e411730dcb2c892e3db42411b8cd58dd4ed5b8078c9ef21640ee"></vuebbble>
             </div>
         `;
     });

@@ -12895,7 +12895,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
     exports.default = {
         name: 'vuebbble',
-
         mounted: function mounted() {
             this.get();
         },
@@ -12912,10 +12911,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
                 type: String,
                 required: true
             },
-            user: {
-                type: String,
-                required: true
-            },
             count: {
                 type: Number,
                 default: 5,
@@ -12926,7 +12921,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             get: function get() {
                 var _this = this;
 
-                this.url = 'https://api.dribbble.com/v1/users/' + this.user + '/shots/?access_token=' + this.token + '&per_page=' + this.count;
+                this.url = 'https://api.dribbble.com/v2/user/shots?access_token=' + this.token + '&per_page=' + this.count;
                 _axios2.default.get(this.url).then(function (response) {
                     _this.shots = response.data;
                 }).catch(function (error) {

@@ -12,7 +12,6 @@ import axios from 'axios';
 
 export default {
     name: 'vuebbble',
-
     mounted() {
         this.get();
     },
@@ -28,10 +27,6 @@ export default {
             type: String,
             required: true,
         },
-        user: {
-            type: String,
-            required: true,
-        },
         count: {
             type: Number,
             default: 5,
@@ -40,7 +35,7 @@ export default {
     },
     methods: {
         get() {
-            this.url = 'https://api.dribbble.com/v1/users/' + this.user + '/shots/?access_token=' + this.token + '&per_page=' + this.count;
+            this.url = 'https://api.dribbble.com/v2/user/shots?access_token=' + this.token + '&per_page=' + this.count;
             axios.get(this.url)
                 .then(response => {
                     this.shots = response.data;
