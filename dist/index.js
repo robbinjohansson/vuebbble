@@ -2076,7 +2076,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('div', {
     staticClass: "vuebbble"
   }, [_vm._l((_vm.shots), function(shot, index) {
-    return _vm._t("shots", null, {
+    return _vm._t("shot", null, {
       shot: shot
     })
   }), _vm._v(" "), (_vm.error) ? _vm._t("error", [_vm._v("\n        " + _vm._s(_vm.error) + "\n    ")], {

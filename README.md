@@ -38,24 +38,41 @@ Vue.use(Vuebbble);
 
 Display the component using [scoped slots.](https://vuejs.org/v2/guide/components.html#Scoped-Slots)
 
-```html
+``` vue
 <template>
-    <vuebbble token="ACCESS_TOKEN" :count="10">
-        <template slot="shots" slot-scope="props">
-            <img :src="props.shot.images.hidpi" :alt="props.shot.title">
-        </template>
+    <vuebbble
+        :token="token"
+        :count="count"
+    >
+        <div slot="shot" slot-scope="{ shot }">
+            <img :src="shot.images.hidpi" :alt="shot.title">
+        </div>
     </vuebbble>
 </template>
+
+<script>
+import { Vuebbble } from 'vuebbble';
+Vue.component('vuebbble', Vuebbble);
+
+export default {
+    data() {
+        return {
+            token: 'ACCESS_TOKEN',
+            count: 9,
+        };
+    },
+};
+</script>
 ```
 
 > :mag: Inspect the component using Vue devtools to see all available data from the response.
 
 ## Available properties
 
-Prop           | Data Type  | Required  | Default   | Description
--------------- | ---------- | --------- | -------   | -----------
-`token`        | String     | `true`    |           | Application access token
-`count`        | Number     | `false`   | 5         | Number of shots to fetch
+Prop           | Data Type  | Default  | Required  | Description
+-------------- | ---------- | -------- | -------   | -----------
+`token`        | String     |          | `true`    | Application access token
+`count`        | Number     | 5        | `false`   | Number of shots to fetch
 
 ## Changelog
 

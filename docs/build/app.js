@@ -12855,7 +12855,14 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     new _vue2.default({
         components: { Vuebbble: _src.Vuebbble },
 
-        el: '#app'
+        el: '#app',
+
+        data: function data() {
+            return {
+                token: 'dff1b22ab880e411730dcb2c892e3db42411b8cd58dd4ed5b8078c9ef21640ee',
+                count: 9
+            };
+        }
     });
 });
 
@@ -13344,7 +13351,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('div', {
     staticClass: "vuebbble"
   }, [_vm._l((_vm.shots), function(shot, index) {
-    return _vm._t("shots", null, {
+    return _vm._t("shot", null, {
       shot: shot
     })
   }), _vm._v(" "), (_vm.error) ? _vm._t("error", [_vm._v("\n        " + _vm._s(_vm.error) + "\n    ")], {

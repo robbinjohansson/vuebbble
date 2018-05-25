@@ -12,15 +12,13 @@
             <div class="columns is-centered">
                 <div class="column is-two-thirds">
                     <vuebbble
-                        token="dff1b22ab880e411730dcb2c892e3db42411b8cd58dd4ed5b8078c9ef21640ee"
-                        :count="9"
+                        :token="token"
+                        :count="count"
                         class="columns is-multiline"
                     >
-                        <template slot="shots" slot-scope="props">
-                            <div class="column is-one-third">
-                                <img :src="props.shot.images.hidpi" :alt="props.shot.title">
-                            </div>
-                        </template>
+                        <div slot="shot" slot-scope="{ shot }" class="column is-one-third">
+                            <img :src="shot.images.hidpi" :alt="shot.title">
+                        </div>
                     </vuebbble>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 <template>
     <div class="vuebbble">
-        <slot v-for="(shot, index) in shots" name="shots" :shot="shot"></slot>
+        <slot v-for="(shot, index) in shots" name="shot" :shot="shot"></slot>
         <slot v-if="error" name="error" :error="error">
             {{ error }}
         </slot>

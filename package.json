@@ -1,6 +1,6 @@
 {
   "name": "vuebbble",
-  "version": "2.6.0",
+  "version": "2.7.0",
   "description": "Vue component to easily display dribbble shots from a user",
   "main": "dist/index.js",
   "jsnext:main": "src/index.js",
