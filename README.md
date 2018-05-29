@@ -47,6 +47,11 @@ Display the component using [scoped slots.](https://vuejs.org/v2/guide/component
         <div slot="shot" slot-scope="{ shot }">
             <img :src="shot.images.hidpi" :alt="shot.title">
         </div>
+
+        <!-- Optional: Custom error message markup -->
+        <div slot="error" slot-scope="{ error }">
+            {{ error }}
+        </div>
     </vuebbble>
 </template>
 
