@@ -1864,16 +1864,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
     exports.default = {
         name: 'vuebbble',
-        mounted: function mounted() {
-            this.get();
-        },
-        data: function data() {
-            return {
-                shots: [],
-                url: '',
-                error: ''
-            };
-        },
 
         props: {
             token: {
@@ -1886,6 +1876,19 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
                 required: false
             }
         },
+
+        data: function data() {
+            return {
+                shots: [],
+                url: '',
+                error: ''
+            };
+        },
+        mounted: function mounted() {
+            this.get();
+        },
+
+
         methods: {
             get: function get() {
                 var _this = this;

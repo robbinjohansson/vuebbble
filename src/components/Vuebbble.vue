@@ -12,16 +12,7 @@ import axios from 'axios';
 
 export default {
     name: 'vuebbble',
-    mounted() {
-        this.get();
-    },
-    data() {
-        return {
-            shots: [],
-            url: '',
-            error: '',
-        };
-    },
+
     props: {
         token: {
             type: String,
@@ -33,6 +24,19 @@ export default {
             required: false,
         },
     },
+
+    data() {
+        return {
+            shots: [],
+            url: '',
+            error: '',
+        };
+    },
+
+    mounted() {
+        this.get();
+    },
+
     methods: {
         get() {
             this.url = 'https://api.dribbble.com/v2/user/shots?access_token=' + this.token + '&per_page=' + this.count;
