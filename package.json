@@ -1,6 +1,6 @@
 {
   "name": "vuebbble",
-  "version": "2.7.0",
+  "version": "2.7.1",
   "description": "Vue component to easily display dribbble shots from a user",
   "main": "dist/index.js",
   "jsnext:main": "src/index.js",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/robbinfellow/vuebbble.git"
+    "url": "git+https://github.com/robbinworks/vuebbble.git"
   },
   "keywords": [
     "vue",
@@ -23,12 +23,12 @@
     "api",
     "shots"
   ],
-  "author": "Robbin Johansson <robbinfellow@gmail.com>",
+  "author": "Robbin Johansson <mail@robbin.works>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/robbinfellow/vuebbble/issues"
+    "url": "https://github.com/robbinworks/vuebbble/issues"
   },
-  "homepage": "https://github.com/robbinfellow/vuebbble#readme",
+  "homepage": "https://github.com/robbinworks/vuebbble#readme",
   "peerDependencies": {
     "vue": "^2.3.0"
   },

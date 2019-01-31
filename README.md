@@ -1,14 +1,14 @@
 [![Latest Version on NPM](https://img.shields.io/npm/v/vuebbble.svg?style=flat-square)](https://npmjs.com/package/vuebbble)
 [![Total Downloads on NPM](https://img.shields.io/npm/dt/vuebbble.svg)](https://www.npmjs.com/package/vuebbble)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Build Status](https://img.shields.io/travis/robbinfellow/vuebbble/master.svg?style=flat-square)](https://travis-ci.org/robbinfellow/vuebbble)
+[![Build Status](https://img.shields.io/travis/robbinworks/vuebbble/master.svg?style=flat-square)](https://travis-ci.org/robbinworks/vuebbble)
 
 # Vuebbble
 Vue component to easily display dribbble shots from a user using the `v2` API.
 
 ## Demo
 
-[Link](https://robbinfellow.github.io/vuebbble/)
+[Link](https://robbinworks.github.io/vuebbble/)
 
 ## Installation
 ```shell
@@ -89,7 +89,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Credits
 
-* [Robbin Johansson](https://github.com/robbinfellow)
+* [Robbin Johansson](https://github.com/robbinworks)
 * [spatie/skeleton-vue](https://github.com/spatie/skeleton-vue)
 
 ## License

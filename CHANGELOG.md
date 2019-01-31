@@ -2,6 +2,15 @@
 
 All notable changes to `vuebbble` will be documented in this file.
 
+## [2.7.1] - 2019-01-31
+
+### Added
+- Added custom error message example to readme.
+
+### Changed
+- Moved repo to [robbinworks/vuebbble](https://github.com/robbinworks/vuebbble).
+- Moved demo to [robbinworks.github.io/vuebbble/](https://robbinworks.github.io/vuebbble/).
+
 ## [2.7.0] - 2018-05-25
 
 ### Changed
