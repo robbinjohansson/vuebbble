@@ -2,6 +2,11 @@
 
 All notable changes to `vuebbble` will be documented in this file.
 
+## [2.7.2] - 2019-02-01
+
+### Fixed
+- Upgrade `webpack-dev-server` to `^3.1.14` due to security vulnerability in `<3.1.11` (https://nvd.nist.gov/vuln/detail/CVE-2018-14732). As a result the following packages had to be updated: `vue-loader@^14.2.2`, `webpack@^4.29.0`. Also added `webpack-cli` as a dev dependency.
+
 ## [2.7.1] - 2019-01-31
 
 ### Added
